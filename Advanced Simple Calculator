@@ -1,0 +1,27 @@
+#Was unable to install python in my PC but it should work. Coded all of it on programiz's online python compiler. Apparently the compiler says, "A module you have imported isn't available at the moment. It will be available soon."
+fir = float(input("Enter the first number: "))
+sec = float(input("Enter the second number: "))
+ope = input("Choose one of the following(+, -, *, /, %): ")
+if ope == '+':
+    sum = fir + sec
+    print("Answer is", sum)
+elif ope == '-':
+    sub = fir - sec
+    print("Answer is " + str(sub))
+elif ope == '*':
+    mul = fir * sec
+    print("Answer is " + str(mul))
+elif ope == '/':
+    div = fir / sec
+    print("Answer is", div)
+elif ope == '%':
+    rem = fir % sec
+    print("Answer is", rem)
+else:
+    print("You didn't choose the correct operator. ")
+clr_ = input("Write 'Clear' if you want to clear screen and memory. ")
+def restart():
+    print("Clearing screen.....")
+    os.system('python main.py')
+if clr_ == 'Clear':
+    restart()
