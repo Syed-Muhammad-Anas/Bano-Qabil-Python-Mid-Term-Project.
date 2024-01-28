@@ -2,19 +2,19 @@ fir = float(input("Enter the first number: "))
 sec = float(input("Enter the second number: "))
 ope = input("Choose one of the following(+, -, *, /, %): ")
 if ope == '+':
-    sum = int(fir) + int(sec)
+    sum = fir + sec
     print("Answer is", sum)
 elif ope == '-':
-    sub = int(fir) - int(sec)
+    sub = fir - sec
     print("Answer is " + str(sub))
 elif ope == '*':
-    mul = int(fir) * int(sec)
+    mul = fir * sec
     print("Answer is " + str(mul))
 elif ope == '/':
-    div = int(fir) / int(sec)
+    div = fir / sec
     print("Answer is", div)
 elif ope == '%':
-    rem = int(fir) % int(sec)
+    rem = fir % sec
     print("Answer is", rem)
 else:
-    print("You didn't choose the correct operator.")
+    print("You didn't choose the correct operator. ")
